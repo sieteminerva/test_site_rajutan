@@ -4,53 +4,453 @@ import { AnimationsService } from "@aio-ui/animations";
 
 /** Generated from preset.json — edit the preset, not this file. */
 const PRESET = {
-  "id": "kriya-nusantara",
+  "id": "kriya-b57",
   "presetSchema": 1,
   "engine": {
-    "range": "^0.1.0",
-    "resolved": "0.1.3"
+    "range": "^0.2.4",
+    "resolved": "0.2.4"
   },
-  "model": "gallery",
+  "model": "profile",
   "theme": "default",
   "site": {
-    "name": "Kriya Nusantara",
-    "locale": "id"
+    "name": "Kriya B57",
+    "locale": "id",
+    "tagline": "Ruang karya perajin lokal yang menghadirkan kehangatan buatan tangan.",
+    "seo": {
+      "title": "Kriya B57",
+      "description": "Kriya B57 adalah ruang karya perajin lokal yang menampilkan kerajinan buatan tangan, layanan pesanan khusus, dan cerita di balik setiap karya.",
+      "keywords": [
+        "kriya",
+        "perajin lokal",
+        "kerajinan tangan",
+        "kriya b57",
+        "produk handmade"
+      ]
+    }
   },
   "pages": [
     {
       "id": "home",
       "route": "/",
       "content": {
-        "section#hero": {
-          "content": {
-            "h1.title": {
-              "attrs": {
-                "animation": "typewriter",
-                "animation-chain": "true"
-              },
-              "content": "Kriya Nusantara"
+        "main": {
+          "content": [
+            {
+              "section#hero": {
+                "content": [
+                  {
+                    "div.hero-inner": {
+                      "content": [
+                        {
+                          "h1.title": {
+                            "content": "Kriya B57",
+                            "attrs": {
+                              "animation": "fade-in"
+                            }
+                          }
+                        },
+                        {
+                          "p.lead": {
+                            "content": "Ruang karya perajin lokal. Setiap benda dibuat dengan tangan, dengan waktu, dan dengan cerita yang layak untuk sampai ke rumah Anda."
+                          }
+                        },
+                        {
+                          "div.hero-actions": {
+                            "content": [
+                              {
+                                "a.button": {
+                                  "content": "Lihat Karya",
+                                  "attrs": {
+                                    "href": "/portofolio"
+                                  }
+                                }
+                              },
+                              {
+                                "a.button.secondary": {
+                                  "content": "Hubungi Kami",
+                                  "attrs": {
+                                    "href": "/kontak"
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
             },
-            "div#masonry": {
-              "builder": "masonry",
-              "content": []
+            {
+              "section#tentang-singkat": {
+                "content": [
+                  {
+                    "h2": {
+                      "content": "Tentang Kami"
+                    }
+                  },
+                  {
+                    "p": {
+                      "content": "Kriya B57 lahir dari keinginan sederhana: memberi ruang bagi perajin lokal untuk memperlihatkan hasil kerjanya. Kami percaya bahwa benda buatan tangan membawa kehangatan yang tidak bisa ditiru mesin."
+                    }
+                  },
+                  {
+                    "p": {
+                      "content": "Dari proses memilih bahan hingga sentuhan akhir, semua dikerjakan dengan sabar oleh tangan-tangan yang sudah terbiasa."
+                    }
+                  }
+                ]
+              }
             },
-            "div#carousel": {
-              "builder": "carousel",
-              "content": []
+            {
+              "section#layanan-singkat": {
+                "content": [
+                  {
+                    "h2": {
+                      "content": "Yang Kami Kerjakan"
+                    }
+                  },
+                  {
+                    "div#layanan-grid": {
+                      "content": [
+                        {
+                          "div.card": {
+                            "content": [
+                              {
+                                "h3": {
+                                  "content": "Kerajinan Tangan"
+                                }
+                              },
+                              {
+                                "p": {
+                                  "content": "Beragam benda fungsional dan dekoratif yang dibuat satu per satu."
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "div.card": {
+                            "content": [
+                              {
+                                "h3": {
+                                  "content": "Pesanan Khusus"
+                                }
+                              },
+                              {
+                                "p": {
+                                  "content": "Ingin bentuk atau ukuran tertentu? Kami terbuka untuk diskusi."
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "div.card": {
+                            "content": [
+                              {
+                                "h3": {
+                                  "content": "Kolaborasi"
+                                }
+                              },
+                              {
+                                "p": {
+                                  "content": "Bekerja sama dengan komunitas dan usaha lokal untuk tumbuh bersama."
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "section#ajakan": {
+                "content": [
+                  {
+                    "h2": {
+                      "content": "Mari Berbincang"
+                    }
+                  },
+                  {
+                    "p": {
+                      "content": "Punya pertanyaan tentang karya kami atau ingin memesan sesuatu? Kirimkan pesan, kami akan membalas secepatnya."
+                    }
+                  },
+                  {
+                    "a.button": {
+                      "content": "Kirim Pesan",
+                      "attrs": {
+                        "href": "/kontak"
+                      }
+                    }
+                  }
+                ]
+              }
             }
-          }
-        },
-        "section#about": {
-          "content": "<p animation=\"fade-in\">Dibuat oleh pengrajin lokal.</p>"
+          ]
+        }
+      }
+    },
+    {
+      "id": "layanan",
+      "route": "/layanan",
+      "content": {
+        "main": {
+          "content": [
+            {
+              "section#layanan": {
+                "content": [
+                  {
+                    "h1": {
+                      "content": "Layanan Kami"
+                    }
+                  },
+                  {
+                    "p.lead": {
+                      "content": "Kami menawarkan beberapa cara untuk bekerja bersama Kriya B57."
+                    }
+                  },
+                  {
+                    "div#layanan-list": {
+                      "content": [
+                        {
+                          "article.layanan-item": {
+                            "content": [
+                              {
+                                "h2": {
+                                  "content": "Kerajinan Tangan"
+                                }
+                              },
+                              {
+                                "p": {
+                                  "content": "Kami membuat benda-benda kerajinan dari bahan pilihan. Setiap produk dikerjakan dengan tangan, sehingga tiap unit memiliki karakter tersendiri."
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "article.layanan-item": {
+                            "content": [
+                              {
+                                "h2": {
+                                  "content": "Pesanan Khusus"
+                                }
+                              },
+                              {
+                                "p": {
+                                  "content": "Butuh hadiah, suvenir, atau benda dengan ukuran tertentu? Kami menerima pesanan khusus dan akan mendiskusikan bahan, waktu, serta biaya bersama Anda."
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "article.layanan-item": {
+                            "content": [
+                              {
+                                "h2": {
+                                  "content": "Workshop dan Kolaborasi"
+                                }
+                              },
+                              {
+                                "p": {
+                                  "content": "Kami membuka ruang untuk berbagi keterampilan melalui workshop sederhana maupun kolaborasi dengan komunitas dan usaha lokal."
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "portofolio",
+      "route": "/portofolio",
+      "content": {
+        "main": {
+          "content": [
+            {
+              "section#portofolio": {
+                "content": [
+                  {
+                    "h1": {
+                      "content": "Portofolio"
+                    }
+                  },
+                  {
+                    "p.lead": {
+                      "content": "Sebagian karya yang pernah kami kerjakan. Setiap benda punya cerita dan prosesnya sendiri."
+                    }
+                  },
+                  {
+                    "div#karya-grid": {
+                      "content": [
+                        {
+                          "article.karya-item": {
+                            "content": [
+                              {
+                                "h2": {
+                                  "content": "Anyaman Serat Alami"
+                                }
+                              },
+                              {
+                                "p": {
+                                  "content": "Wadah serbaguna dari serat alami, dianyam dengan pola sederhana yang kuat dan ringan."
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "article.karya-item": {
+                            "content": [
+                              {
+                                "h2": {
+                                  "content": "Keramik Tanah Liat"
+                                }
+                              },
+                              {
+                                "p": {
+                                  "content": "Perangkat makan dari tanah liat lokal, dibentuk dan dibakar dengan teknik tradisional."
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "article.karya-item": {
+                            "content": [
+                              {
+                                "h2": {
+                                  "content": "Kayu Ukir"
+                                }
+                              },
+                              {
+                                "p": {
+                                  "content": "Potongan kayu dengan ukiran halus, cocok untuk dekorasi ruang maupun hadiah."
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "article.karya-item": {
+                            "content": [
+                              {
+                                "h2": {
+                                  "content": "Tekstil Tenun"
+                                }
+                              },
+                              {
+                                "p": {
+                                  "content": "Kain tenun dengan warna alami, dibuat dengan alat tenun sederhana."
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "kontak",
+      "route": "/kontak",
+      "content": {
+        "main": {
+          "content": [
+            {
+              "section#kontak": {
+                "content": [
+                  {
+                    "h1": {
+                      "content": "Hubungi Kami"
+                    }
+                  },
+                  {
+                    "p.lead": {
+                      "content": "Isi formulir di bawah ini atau kirim email ke uji@example.com. Kami akan membalas secepatnya."
+                    }
+                  },
+                  {
+                    "div#contact-form": {
+                      "builder": "form",
+                      "content": {
+                        "config": {
+                          "id": "contact",
+                          "multistep": false
+                        },
+                        "schema": [
+                          {
+                            "id": "person",
+                            "title": "Data Diri",
+                            "group": [
+                              {
+                                "type": "text",
+                                "id": "name",
+                                "label": "Nama",
+                                "placeholder": "Nama lengkap"
+                              },
+                              {
+                                "type": "email",
+                                "id": "email",
+                                "label": "Email",
+                                "placeholder": "alamat@email.com"
+                              },
+                              {
+                                "type": "tel",
+                                "id": "phone",
+                                "label": "Nomor Telepon",
+                                "placeholder": "Opsional"
+                              },
+                              {
+                                "type": "textarea",
+                                "id": "message",
+                                "label": "Pesan",
+                                "placeholder": "Tuliskan pertanyaan atau kebutuhan Anda"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          ]
         }
       }
     }
   ],
   "wizard": {
     "answers": {
-      "webType": "gallery"
+      "confirmation": true,
+      "web-type": "profile",
+      "web-name": "Kriya B57",
+      "contact-email": "uji@example.com",
+      "web-reason": "Ruang karya perajin lokal"
     },
-    "generatedAt": "2026-11-10T00:00:00.000Z"
+    "generatedAt": "2026-11-22T22:36:11.767Z"
   }
 };
 
@@ -58,9 +458,11 @@ const assets = {
   modules: {
   "@aio-ui/animations": () => import("https://cdn.jsdelivr.net/gh/sieteminerva/AIO-UI@v0.2.4/packages/modules/animations/dist/index.js"),
   "@aio-ui/base": () => import("https://cdn.jsdelivr.net/gh/sieteminerva/AIO-UI@v0.2.4/packages/base/dist/index.js"),
-  "@aio-ui/carousel": () => import("https://cdn.jsdelivr.net/gh/sieteminerva/AIO-UI@v0.2.4/packages/components/carousel/dist/index.js"),
   "@aio-ui/core": () => import("https://cdn.jsdelivr.net/gh/sieteminerva/AIO-UI@v0.2.4/packages/core/dist/index.js"),
-  "@aio-ui/masonry": () => import("https://cdn.jsdelivr.net/gh/sieteminerva/AIO-UI@v0.2.4/packages/components/masonry/dist/index.js"),
+  "@aio-ui/form": () => import("https://cdn.jsdelivr.net/gh/sieteminerva/AIO-UI@v0.2.4/packages/components/form/dist/index.js"),
+  "@aio-ui/form/validation-adapter": () => import("https://cdn.jsdelivr.net/gh/sieteminerva/AIO-UI@v0.2.4/packages/components/form/dist/adapters/Validation.js"),
+  "@aio-ui/input": () => import("https://cdn.jsdelivr.net/gh/sieteminerva/AIO-UI@v0.2.4/packages/components/input/dist/index.js"),
+  "@aio-ui/message": () => import("https://cdn.jsdelivr.net/gh/sieteminerva/AIO-UI@v0.2.4/packages/components/message/dist/index.js"),
   "@aio-ui/router": () => import("https://cdn.jsdelivr.net/gh/sieteminerva/AIO-UI@v0.2.4/packages/modules/router/dist/index.js"),
   "@aio-ui/theme": () => import("https://cdn.jsdelivr.net/gh/sieteminerva/AIO-UI@v0.2.4/packages/modules/theme/dist/index.js"),
   "@aio-ui/theme-default": () => import("https://cdn.jsdelivr.net/gh/sieteminerva/AIO-UI@v0.2.4/packages/themes/default/dist/index.js")
@@ -71,8 +473,8 @@ const assets = {
 };
 
 const registry = new ComponentRegistry(assets);
-registry.register("carousel", () => ({ path: "@aio-ui/carousel" }));
-registry.register("masonry", () => ({ path: "@aio-ui/masonry" }));
+registry.register("form", (data) => { const payload = data?.content ?? data; return { path: "@aio-ui/form", export: "FormBuilder", config: payload?.config, schema: payload?.schema ?? payload, modules: [{ id: "input", path: "@aio-ui/form", export: "inputFormAdapter" }, { id: "message", path: "@aio-ui/message", export: "messageFormAdapter" }, { id: "validation", path: "@aio-ui/form/validation-adapter", export: "validationFormAdapter" }] }; });
+registry.register("message", () => ({ path: "@aio-ui/message" }));
 
 const pages = Object.fromEntries(PRESET.pages.map((page) => [page.id, page.content]));
 
@@ -88,9 +490,20 @@ const pages = Object.fromEntries(PRESET.pages.map((page) => [page.id, page.conte
 const pageDefinitions = [
   {
     "route": "home",
+    "requires": []
+  },
+  {
+    "route": "layanan",
+    "requires": []
+  },
+  {
+    "route": "portofolio",
+    "requires": []
+  },
+  {
+    "route": "kontak",
     "requires": [
-      "carousel",
-      "masonry"
+      "form"
     ]
   }
 ];
